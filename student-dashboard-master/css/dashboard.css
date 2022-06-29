@@ -1,0 +1,110 @@
+/* dashboard code */
+.dash {
+  margin: 5rem 1rem 1rem 15.5rem;
+}
+
+#curve_chart {
+  border: 1px solid #042331;
+  height: 450px;
+  width: 88%;
+}
+
+/*pie chart's heading*/
+#heading {
+  margin-left: 0.5rem;
+}
+
+#donutchart {
+  border: #042331 1px;
+  border-style: solid;
+  height: 300px;
+}
+
+#progress {
+  margin-top: 3rem;
+}
+
+table {
+  text-align: center;
+}
+
+input {
+  border: 0;
+  width: 90%;
+  text-align: center;
+}
+
+input:focus {
+  outline: 0;
+}
+
+@media(max-width:1000px) {
+  .dash {
+    margin-top: 7rem;
+    margin-left: 0 !important;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .dashChart {
+    width: 75%;
+    padding-right: 0;
+  }
+
+  #donutchart {
+    width: 75%;
+  }
+
+  .dashTable {
+    width: 75%;
+  }
+
+  .newbtn {
+    margin: 2rem 2rem 2rem 5rem !important;
+    
+
+  }
+}
+
+@media(max-width:700px) {
+  .dashChart {
+    width: 75%;
+  }
+
+  #donutchart {
+    width: 85%;
+  }
+
+  .dashTable {
+    width: 85%;
+  }
+}
+
+@media(max-width:500px) {
+  .dashChart {
+    width: 85%;
+  }
+
+  #donutchart {
+    width: 82%;
+  }
+}
+
+.newbtn {
+  margin: 2rem 2rem 2rem 37rem;
+  
+
+}
+
+/* dropdown's code*/
+.dropdown-item:hover {
+  background-color: #ffc594;
+}
+
+.dropdown-divider {
+  margin: 0;
+}
+
+.dropdown-item {
+  padding: 1rem auto;
+}

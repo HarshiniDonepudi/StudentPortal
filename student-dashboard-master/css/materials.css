@@ -1,0 +1,68 @@
+/* materials section starts here */
+/*this is for the whole section */
+.materials {
+  margin: 5rem 1rem 1rem 15.5rem;
+}
+
+/* this is for making scroll bars in tables */
+.materisAndTools {
+  height: 400px;
+  overflow: scroll;
+}
+
+/* this is for tables in this section */
+table {
+  text-align: center;
+}
+
+td img {
+  width: 90px;
+  height: 70px;
+  border-radius: 30%;
+}
+
+/* this is for previous and next buttons */
+.materials .btn {
+  background-color: #cc5500;
+  color: #000;
+  font-weight: 500;
+  border: 0.5px solid #000;
+  opacity: 0.9;
+  margin: 3rem 10rem;
+  padding: 1rem 2rem;
+}
+
+.materials .btn:hover {
+  opacity: 1;
+  box-shadow: 0 5px darkgrey;
+  transform: translateY(4px);
+  border: 2px solid #000;
+}
+
+/* media queries for this section to make this responsive */
+@media(max-width:1000px) {
+  .materials {
+    margin-left: 0 !important;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .materials .btn {
+    margin: 0.5rem 3rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media(max-width:500px) {
+  .materials div div h4 {
+    margin-right: 3px !important;
+  }
+
+  .materials div div input {
+    padding: 0;
+  }
+
+  .materials {
+    margin-top: 7rem;
+  }
+}

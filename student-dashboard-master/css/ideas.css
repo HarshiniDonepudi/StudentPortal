@@ -1,0 +1,51 @@
+/* idea collection section starts here */
+/* for the main div that contains whole idea collection section */
+.ideas {
+  margin: 5rem 1rem 1rem 15.5rem;
+}
+
+/* for the tables */
+table {
+  text-align: center;
+}
+
+table thead {
+  background-color: #0a5275;
+  color: #fff;
+}
+
+/* for the buttons that are in table for sharing and contributing projects */
+.btn {
+  background-color: #ffc594;
+  color: #0a5275;
+  border: 0.5px solid #000;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+  box-shadow: 0 5px #0a5275;
+  transform: translateY(4px);
+  border: 2px solid #000;
+}
+
+/* to make border arount div that contains the table*/
+.idea-list {
+  border: 1.5px solid #212529;
+  padding: 0;
+}
+
+.col-lg-6 {
+  text-align: center;
+}
+
+/* media queries for idea section so that side menu can be open on top of it in small screens */
+@media(max-width:1000px) {
+  .ideas {
+    margin-left: 0 !important;
+    position: absolute;
+    z-index: 1;
+  }
+}
+
+/* idea collection ends here */

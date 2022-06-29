@@ -1,0 +1,97 @@
+/* wallet section */
+/* this is for the main div of whole section */
+.wallet {
+  margin: 5rem 1rem 1rem 15.5rem;
+}
+
+/*this is to make scroll bars in table */
+.walletdiv {
+  height: 400px;
+  overflow: scroll;
+  border: 1.5px solid #212529;
+}
+
+/* this is for tables in wallet section */
+table {
+  text-align: center;
+}
+
+table thead {
+  background-color: #0a5275;
+  color: #fff;
+}
+
+/* this is for buttons in wallet section */
+.wallet .btn {
+  background-color: #cc5500;
+  color: #000;
+  font-weight: 500;
+  border: 0.5px solid #000;
+  opacity: 0.9;
+  margin: 3rem 10rem;
+  padding: 1rem 2rem;
+}
+
+.wallet .btn:hover {
+  opacity: 1;
+  box-shadow: 0 5px darkgrey;
+  transform: translateY(4px);
+  border: 2px solid #000;
+}
+
+/* media queries for wallet section in order to make it responsive*/
+@media(max-width:1000px) {
+  .wallet {
+    margin-left: 0 !important;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .wallet .btn {
+    margin: 0.5rem 3rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .wallet {
+    margin-top: 8rem;
+  }
+
+  .wallet div div h1 {
+    margin-left: 0.5rem !important;
+  }
+}
+
+.wallet div div h1 {
+  margin-left: 3rem;
+  background-color: #ffc594;
+  border: 2px solid #212529;
+  padding: 1rem 0 1rem 1rem;
+  width: 80%;
+}
+
+.wallet div div h1:hover {
+  box-shadow: 5px 10px #212529;
+}
+
+.searchFromTo {
+  margin: 3rem 3rem 0 3rem;
+}
+
+@media(max-width:750px) {
+  .searchFromTo {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+@media(max-width:630px) {
+  .searchFromTo button {
+    display: block;
+    margin: 1.5rem !important;
+  }
+
+  .searchFromTo input {
+    display: block;
+    margin: 1rem;
+  }
+}

@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title> Materials </title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  
+  <link rel="stylesheet" href="css/common.css" />
+
+  <link rel="stylesheet" href="css/materials.css" />
+
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+</head>
+
+<body>
+
+  <!-- nav bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand logoMiniguru" href="#">Student Portal</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <form class="form-inline my-2 my-lg-0 ">
+          <input class="form-control form-control-dark searchBar" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-primary" style="background-color:#cc5500; border:none;">search</button>
+        </form>
+
+        <li class="nav-item dropdown userPhoto">
+          <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user" style="font-size:2rem;color:#fff;"></i>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#"><i class="fas fa-home"></i> Home</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="yourvideos.html"><i class="fas fa-video"></i> Your videos</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="settings.html"><i class="fas fa-cog"></i> Account Settings</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"><i class="fas fa-question-circle"></i> Help</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> SignOut</a>
+          </div>
+        </li>
+        <li class="nav-item bell">
+          <a class="nav-link " href="#"><i class="fas fa-bell" style="font-size:2rem;color:#fff;"></i></a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+ 
+
+  <input type="checkbox" id="check">
+  <label for="check">
+    <i class="fas fa-bars" id="btn"></i>
+    <i class="fas fa-times" id="cancel"></i>
+  </label>
+  <section id="sideMenu">
+    <nav>
+      <a href="dashboard1.php" class="active"><i class="fas fa-tachometer-alt-slowest" style="font-size:1.4rem; padding-right: 1rem; color:#cc5500;"></i>Dashboard</a>
+      <hr /><a href="planner.html"> <i class="fas fa-mind-share" style="font-size:1.4rem; padding-right: 1rem; color:#cc5500;"></i>Planner</a>
+      <hr /><a href="materials.html" class="active"><i class="fas fa-hammer" style="font-size:1.4rem; padding-right: 1rem; color:#cc5500;"></i> Materials </a>
+      <hr /><a href="upload.html"> <i class="fas fa-upload" style="font-size:1.4rem; padding-right: 1rem; color:#cc5500;"></i>Assignments </a>
+      <hr /><a href="wallet.php"> <i class="fas fa-wallet" style="font-size:1.4rem; padding-right: 1rem; color:#cc5500;"></i> Fee Payment</a>
+      <hr /><a href="progress.php"> <i class="fas fa-chart-bar" style="font-size:1.4rem; padding-right: 1rem; color:#cc5500;"></i> Results</a>
+      <hr /><a href="ideas.html"> <i class="fa fa-pencil" aria-hidden="true" style="font-size:1.4rem; padding-right: 1rem; color:#cc5500;"></i> Exams</a>
+      <hr /><a href="attendence.php"> <i class="fa fa-check" aria-hidden="true"style="font-size:1.4rem; padding-right: 1rem; color:#cc5500;"></i> Attendence</a>
+      <hr /><a href="logout.php"> <i class="fa fa-sign-out" aria-hidden="true" style="font-size:1.4rem; padding-right: 1rem; color:#cc5500;"></i> Logout</a>
+    </nav>
+
+  </section>
+
+ 
+  <div class="row materials">
+    <div class="col-lg-12 col-sm-12" style="margin-bottom:3rem;">
+      <div style="background-color:#042331; border:2px solid #cc5500;color:#fff;padding:1rem;">
+        <h4 style="display:inline; margin-right:5rem;">Materials list</h4>
+        <input type="text" placeholder="search" style="border:1px solid #000; border-radius:6%;height:2.5rem;padding-left:8px;" />
+      </div>
+      <div class="materisAndTools">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">No: of Pages</th>
+              <th scope="col">Subject</th>
+              <th scope="col">Material name</th>
+
+              <th scope="col">Material</th>
+              <th scope="col" class="quantity">Quantity</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="checkbox" id="" name="" value=""></td>
+              <td>10</td>
+              <td>DWDM</td>
+              <td>Classification</td>
+              <td><img src="images/pdf.png" /></td>
+              <td><input type="number" id="quantity" name="quantity" min="1" max="10"></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" id="" name="" value=""></td>
+              <td>16</td>
+              <td>DWDM</td>
+              <td>Data Cube Model</td>
+
+              <td><img src="images/doc.png" /></td>
+              <td><input type="number" id="quantity" name="quantity" min="1" max="10"></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" id="" name="" value=""></td>
+              <td>19</td>
+              <td>Senesor Networks</td>
+
+              <td>Adhoc networks</td>
+
+              <td>
+                <img src="images/doc.png" />
+              </td>
+              <td><input type="number" id="quantity" name="quantity" min="1" max="10"></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" id="" name="" value=""></td>
+              <td>20</td>
+              <td>Embedded Systems</td>
+
+              <td>Real time Operating systems</td>
+
+              <td><img src="images/pdf.png" /></td>
+              <td><input type="number" id="quantity" name="quantity" min="1" max="10"></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" id="" name="" value=""></td>
+              <td>17</td>
+              <td>Embedded Systems</td>
+
+              <td>Types of embedded systems</td>
+
+              <td><img src="images/pdf.png" /></td>
+              <td><input type="number" id="quantity" name="quantity" min="1" max="10"></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" id="" name="" value=""></td>
+              <td>12</td>
+              <td>Compiler Design</td>
+
+              <td>Phases of Compiler</td>
+
+              <td><img src="images/doc.png" /></td>
+              <td><input type="number" id="quantity" name="quantity" min="1" max="10"></td>
+            </tr>
+
+            <tr>
+              <td><input type="checkbox" id="" name="" value=""></td>
+              <td>23</td>
+              <td>DWDM</td>
+
+              <td>Association</td>
+
+              <td><img src="images/doc.png" /></td>
+              <td><input type="number" id="quantity" name="quantity" min="1" max="10"></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" id="" name="" value=""></td>
+              <td>15</td>
+              <td>Web Technologies </td>
+
+              <td>HTML</td>
+
+              <td><img src="images/pdf.png" /></td>
+              <td><input type="number" id="quantity" name="quantity" min="1" max="10"></td>
+            </tr>
+            <tr>
+
+              <td><input type="checkbox" id="" name="" value=""></td>
+              <td>12</td>
+              <td>Compiler design</td>
+              <td>Parsing</td>
+
+              <td><img src="images/doc.png" /></td>
+              <td><input type="number" id="quantity" name="quantity" min="1" max="10"></td>
+            </tr>
+            <tr>
+
+              <td><input type="checkbox" id="" name="" value=""></td>
+              <td>13</td>
+              <td>Artificial Intelligence</td>
+              <td>Searching</td>
+
+              <td><img src="images/pdf.png" /></td>
+              <td><input type="number" id="quantity" name="quantity" min="1" max="10"></td>
+            </tr>
+            <tr>
+
+              <td><input type="checkbox" id="" name="" value=""></td>
+              <td>14</td>
+              <td>Compiler Design</td>
+              <td>Code Optimisation</td>
+
+              <td><img src="images/doc.png" /></td>
+              <td><input type="number" id="quantity" name="quantity" min="1" max="10"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="col-lg-12 col-sm-12 tools">
+      <div style="background-color:#042331; border:2px solid #cc5500;color:#fff;padding:1rem;">
+        <h4 style="display:inline; margin-right:5rem;">Course list</h4>
+        <input type="text" placeholder="search" style="border:1px solid #000; border-radius:6%;height:2.5rem;padding-left:8px;" />
+
+      </div>
+      <div class="materisAndTools">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Subject</th>
+              <th scope="col">No: of Units</th>
+              <th scope="col">Instructor</th>
+              <th scope="col">Previous Question paper</th>
+              <th scope="col">Textbook</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="checkbox" id="" name="" value=""></td>
+              <td>Artificial Intelligence</td>
+              <td>7</td>
+              <td>Prof.Vizianada Rao</td>
+
+              <td><img src="images/doc.png" /> </td>
+              <td>Artificial Intelligence by Kevin Knight</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" id="" name="" value=""></td>
+              <td>Compiler design</td>
+              <td>7</td>
+              <td>Dr.Venkata Ramana</td>
+
+              <td><img src="images/pdf.png" /> </td>
+              <td>Principles of Compiler Design by Aho</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" id="" name="" value=""></td>
+              <td>Embedded Systems</td>
+              <td>6</td>
+              <td>Dr.Mary Sowjanya</td>
+
+              <td><img src="images/pdf.png" /> </td>
+              <td>Introduction to Embedded Systems by K.V Shibu</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" id="" name="" value=""></td>
+              <td>Web Technologies</td>
+              <td>7</td>
+              <td>Raghu Veer</td>
+
+              <td><img src="images/doc.png" /> </td>
+              <td>Web technologies by Uttam K Roy</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" id="" name="" value=""></td>
+              <td>Sensor Networks</td>
+              <td>7</td>
+              <td>Dr.S.Jhansi Rani</td>
+
+              <td><img src="images/pdf.png" /> </td>
+              <td>Wireless Sensor Networks by Karl</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" id="" name="" value=""></td>
+              <td>Data Warehousing and Data Mining</td>
+              <td>7</td>
+              <td>V.Harinadh</td>
+
+              <td><img src="images/pdf.png" /> </td>
+              <td>Data Mining Techniques by A.K.Pujari</td>
+            </tr>
+
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+
+</html>

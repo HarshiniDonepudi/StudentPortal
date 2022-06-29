@@ -1,0 +1,116 @@
+/* for user icon */
+.userPhoto {
+  padding-left: 2rem;
+}
+
+/* for bell icon */
+.bell {
+  padding-left: 2rem;
+}
+
+/* for door icon */
+.window {
+  padding: 0 2rem;
+}
+
+/* for search bar*/
+.searchBar {
+  padding-right: 3rem;
+  margin: 0 0.1rem;
+}
+
+/* profile pictures of Studentren */
+.profilePic {
+  text-align: center;
+  margin-top: 4.5rem;
+}
+
+.StudentPic {
+  border-radius: 100%;
+  width: 15rem;
+  height: 15rem;
+  border: 2px solid #000;
+}
+
+.profilePic .btn {
+  display: block;
+  margin: 5px auto;
+  background-color: #cc5500;
+  color: #fff;
+  opacity: 0.9;
+}
+
+.profilePic .btn:hover {
+  border: 1px solid #000;
+  opacity: 1;
+}
+
+.profilePic .btn:active {
+  box-shadow: 0 5px darkgrey;
+  transform: translateY(4px);
+  opacity: 1;
+  border: 2px solid #000;
+}
+
+.Student-info {
+  margin: 4rem 13rem;
+}
+
+.profile-details div a {
+  border: none;
+  border-bottom: 3px solid #000;
+  color: #000;
+}
+
+.profile-details div a:hover {
+  font-weight: bold;
+}
+
+.profile-details div a:active, .profile-details div a.active {
+  background-color: #cc5500;
+  font-weight: 500;
+  border-bottom: none;
+}
+
+.content-profile {
+  margin: 2rem 3rem;
+}
+
+@media (max-width:1025px) {
+  .Student-info {
+    margin: 4rem 0;
+  }
+
+  .change-btn {
+    margin: 0 2rem !important;
+  }
+}
+
+.change-btn {
+  background-color: #cc5500;
+  color: #000;
+  font-weight: 500;
+  border: 0.5px solid #000;
+  opacity: 0.9;
+  margin: 0 4rem;
+}
+
+.change-btn:hover {
+  opacity: 1;
+  box-shadow: 0 5px darkgrey;
+  transform: translateY(4px);
+  border: 2px solid #000;
+}
+
+/* for dropdowns */
+.dropdown-item:hover {
+  background-color: #ffc594;
+}
+
+.dropdown-divider {
+  margin: 0;
+}
+
+.dropdown-item {
+  padding: 1rem auto;
+}

@@ -1,0 +1,30 @@
+/* progress section code */
+.progress-section {
+  margin: 5rem 1rem 1rem 15.5rem;
+}
+
+.progressdiv {
+  height: 400px;
+  overflow: scroll;
+  border: 1.5px solid #212529;
+}
+
+table {
+  text-align: center;
+  width: 70%;
+}
+
+table thead {
+  background-color: #0a5275;
+  color: #fff;
+}
+
+@media(max-width:1000px) {
+  .progress-section {
+    margin-top: 7rem;
+    margin-left: 1.5rem !important;
+    position: absolute;
+    z-index: 1;
+    width: 90%;
+  }
+}

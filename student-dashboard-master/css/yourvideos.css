@@ -1,0 +1,65 @@
+/* your videos section */
+/* this is for background color of the page */
+body {
+  background-color: #ffffcc;
+}
+
+/* this is for icon of user */
+.userPhoto {
+  padding-left: 2rem;
+}
+
+/*this is for bell icon used for notification */
+.bell {
+  padding: 0 2rem;
+}
+
+/*this is search bar which is there in nav bar */
+.searchBar {
+  padding-right: 3rem;
+  margin: 0 0.1rem;
+}
+
+/* this is for the filter icon which is there in nav bar*/
+.filter {
+  padding-left: 2rem;
+}
+
+/* this is for door icon in nav bar which will reditrect to dashboard */
+.window {
+  padding-left: 2rem;
+}
+
+/* this is for sort icon */
+.sort {
+  padding-left: 2rem;
+}
+
+.your-video {
+  margin: 5rem 0;
+}
+
+.card {
+  margin-bottom: 1rem;
+  background-color: #ffc594;
+  text-align: center;
+  padding: 0;
+}
+
+.card:hover {
+  background-color: #1b1e23;
+  box-shadow: 0 5px darkgrey;
+  transform: translateY(5px);
+}
+
+.dropdown-item:hover {
+  background-color: #ffc594;
+}
+
+.dropdown-divider {
+  margin: 0;
+}
+
+.dropdown-item {
+  padding: 1rem auto;
+}
